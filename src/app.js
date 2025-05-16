@@ -12,14 +12,14 @@ const viewsRouter = require('./routes/views.router');
 const attachSocket = require('./utils/attachSocket')
 
 const app = express();
-const port = 8080
+const PORT = process.env.PORT || 8080
 
 app.engine('hbs', handlebars.engine({extname: 'hbs'}));
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'hbs')
 
 
-const httpServer = app.listen(port, err =>{
+const httpServer = app.listen(PORT, err =>{
     if(err) return console.log(err);
     console.log(`Servidor funcionando en el puerto ${port}`)
 })
