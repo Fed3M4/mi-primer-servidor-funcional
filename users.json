@@ -1,0 +1,34 @@
+[
+	{
+		"firstName": "ricardo",
+		"lastName": "lapalma",
+		"userName": "cruda214",
+		"password": "pesitos",
+		"id": 1,
+		"gender": "Masculino",
+		"contrasenia": "05a6ee760713a5c3821083aab8c656cd8dee79da94c2cea2965300622a341339",
+		"salt": "WkFVGIPyeMJwP9KwrFIAddfyEJZANJ7+uA+JW52LnyK8pUdlBNyeEzg7nE3QARnhfiJi/H87Y1NLO0595XY7IrE1Ps1Uk7pz9gVNGRpyCJeH3jhKGK2K698dfrq57GfIwY9esZIuowGgxgLbGPbiDiAnyEBEiwkLkw/dMiufW6o="
+	},
+	{
+		"firstName": "Paola",
+		"lastName": "Argento",
+		"gender": "Femenino",
+		"userName": "paoarg69",
+		"email": "pao_1989@gmail.com",
+		"password": "fatigo2022",
+		"id": 2,
+		"contrasenia": "098be82d509b2c043f01a6e0ffd7776a71bed798723dc999b398da2844e798dc",
+		"salt": "s4Pc4bpaTjD/fRFvVXTBXgeqlgsVDtEW57OYqtHGPolgwTno2Qkze0LwEJ7/SsQeVxwNlOm/3+/YyXy5ArCRR7H1wc4gXpUZR50ycQXAD5EnOtvHw2ET12Uma8EBAAughZIJyKJX+57jqsI9pibBtjkiNeJb2Nk5JcEglHayIOM="
+	},
+	{
+		"firstName": "Andrea",
+		"lastName": "Defrance",
+		"gender": "Femenino",
+		"userName": "carpincho",
+		"email": "andreadefrance@gmail.com",
+		"password": "polanka999",
+		"id": 3,
+		"contrasenia": "c2d0d14ef566ead5b03515a600b987aba09bbd5fe0b046947153a4e613ba1d27",
+		"salt": "pRVT2T2rTmnU0dzAn9/20QTR3Xjhq2TkSwCzorwAYAkoBlfVogTbb448vDoTCEsKAz0J6d5aWWgdphuXUgOWy8KyOdZgDkt780ukvZ5g7CmutMpJrScxwmIIXxaQgfLaxR8KH4q5V4v3KE7WVNhMZ/zpnggSBRgPCKuJZ+rWU94="
+	}
+]

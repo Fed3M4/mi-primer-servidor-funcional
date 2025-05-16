@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Zapas FILA",
+        "description": "QWER",
+        "price": 1400,
+        "thumbnail": "c/fotos5",
+        "code": "dhvqELuUHb4jPLT",
+        "stock": 20
+    },
+    {
+        "id": 2,
+        "title": "Zapas NIKE",
+        "description": "MAX AIR",
+        "price": 2500,
+        "thumbnail": "c/fotosNIKE2025",
+        "code": "oyk2HKkK5XnW1Wk",
+        "stock": 16
+    },
+    {
+        "id": 3,
+        "title": "Zapas ADIDAS",
+        "description": "TOTAL",
+        "price": 1900,
+        "thumbnail": "c/fotosADIDAS",
+        "code": "rQ6Oa1KtDfwg1WV",
+        "stock": 15
+    },
+    {
+        "id": 4,
+        "title": "Zapas LECOQ",
+        "description": "TOTAL",
+        "price": 1100,
+        "thumbnail": "c/fotosLECOQ",
+        "code": "oqY05PS7jxqBNpm",
+        "stock": 24
+    },
+    {
+        "title": "Campera",
+        "description": "Cuero",
+        "price": 123455,
+        "thumbnail": "/fotos",
+        "stock": 6,
+        "id": 5,
+        "code": "KvpMb4FerQjIefs"
+    },
+    {
+        "title": "Pantalon",
+        "description": "Jean",
+        "price": 90000,
+        "thumbnail": "/fotosPantalon",
+        "stock": 29,
+        "id": 6,
+        "code": "cUGr8MTLGCGKa8I"
+    },
+    {
+        "title": "Camisa",
+        "description": "Kamisama",
+        "price": 787878,
+        "thumbnail": "/fotosz",
+        "stock": 12,
+        "id": 7,
+        "code": "Pt6VwCWtNlHelo3"
+    }
+]

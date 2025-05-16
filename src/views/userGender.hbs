@@ -1,0 +1,16 @@
+<h1>Estos son los usuarios que existen hasta el momento</h1>
+{{#if isAdmin}}
+    {{#each usersFiltered}}
+        <p>
+            Usuario seleccionado:
+            Nombre: {{this.firstName}}
+            Apellido: {{lastName}}
+            Género: {{gender}}
+        </p>
+    {{/each}}
+{{else}}
+    <p>No podes ver esto no tenes los permisos necesarios</p>
+{{/if}}
+<script src="/js/users.js"></script>
+
+
