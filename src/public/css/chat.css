@@ -1,0 +1,107 @@
+/* Estilo básico para el contenedor principal del chat */
+div {
+    font-family: sans-serif;
+    width: 100%; /* Hacer que ocupe todo el ancho disponible */
+    padding: 0 20px; /* Añadir un poco de padding a los lados para que no toque los bordes */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Mantener la altura para que la lista de mensajes pueda scrollear */
+}
+
+/* Mantener el margen vertical si lo deseas */
+div {
+    margin: 20px 0; /* Margen solo arriba y abajo, sin centrado automático */
+}
+
+.inputBox{
+    height: 10vh;
+    margin: 3px;
+}
+
+/* Estilo para el título del chat */
+h2 {
+    text-align: center;
+    background-color: #f0f0f0; /* Fondo para el encabezado */
+    margin: 0; /* Eliminar margen por defecto */
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Separador */
+}
+
+/* Contenedor de la lista de mensajes */
+div:nth-of-type(2) { /* Selecciona el segundo div dentro del principal */
+    flex-grow: 1; /* Permite que la lista de mensajes ocupe el espacio restante */
+    overflow-y: auto; /* Añade scroll vertical si los mensajes superan la altura */
+    padding: 10px;
+}
+
+/* Estilo para la lista (donde van los mensajes) */
+#list-message {
+    list-style: none; /* Elimina los puntos o números de la lista */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+}
+
+/* Estilo para cada mensaje (cada <li>) */
+#list-message li {
+    margin-bottom: 10px; /* Espacio entre mensajes */
+    padding: 8px 12px; /* Espacio dentro de cada burbuja de mensaje */
+    border-radius: 15px; /* Bordes redondeados para las burbujas */
+    max-width: 80%; /* Ancho máximo de la burbuja */
+    word-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
+    clear: both; /* Limpia floats si los usas (útil para alinear a izq/der) */
+}
+
+.messageListContainer {
+  flex-grow: 1; /* Permite que este div ocupe el espacio vertical restante */
+  overflow-y: auto; /* HABILITA EL SCROLL VERTICAL */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para el campo de texto (ahora un textarea) */
+#message {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Espacio a la derecha si añades un botón */
+    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+    min-height: 40px; /* Altura mínima inicial (ajusta según prefieras) */
+    overflow-y: auto; /* Añade scroll si el contenido supera la altura */
+}
+
+/* Eliminar el <br> que añades con JS */
+#list-message li br {
+    display: none;
+}
+
+
+
+/* Estilo para mensajes enviados por el usuario actual */
+.message-sent {
+    background-color: #dcf8c6; /* Un verde claro, típico de chats */
+    align-self: flex-end; /* Alinear a la derecha si el contenedor es flex */
+    float: right; /* Alternativa para alinear a la derecha si no usas flexbox en el contenedor */
+}
+
+/* Estilo para mensajes recibidos de otros usuarios */
+.message-received {
+    background-color: #ebebeb; /* Un gris claro */
+    align-self: flex-start; /* Alinear a la izquierda */
+    float: left; /* Alternativa para alinear a la izquierda */
+}
+
+/* Ajustar el contenedor de mensajes para usar flexbox si quieres usar align-self */
+/* Modifica la regla div:nth-of-type(2) */
+div:nth-of-type(2) {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex; /* Añadir display: flex */
+    flex-direction: column; /* Y flex-direction: column */
+}

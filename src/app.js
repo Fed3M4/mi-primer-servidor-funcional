@@ -21,7 +21,7 @@ app.set('view engine', 'hbs')
 
 const httpServer = app.listen(PORT, err =>{
     if(err) return console.log(err);
-    console.log(`Servidor funcionando en el puerto ${port}`)
+    console.log(`Servidor funcionando en el puerto ${PORT}`)
 })
 
 const io = new Server(httpServer)

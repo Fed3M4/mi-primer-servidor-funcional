@@ -2,7 +2,9 @@ const socket = io()
 
 let user;
 const input = document.getElementById('message');
-const messageList = document.getElementById('list-message')
+const messageList = document.getElementById('list-message');
+const messageListContainer = document.querySelector('.messageListContainer');
+
 Swal.fire({
     title: "Identificate",
     input: "text",
@@ -31,8 +33,9 @@ socket.on('historial_mensajes', data =>{
     if(data.user === user) {
          if (messageList) {
         data.messages.forEach(log => {
-            messageList.innerHTML += `<li>${log.user}: ${log.message}</li><br>`;
-            messageList.scrollTop = messageList.scrollHeight;
+            const messageClass = (log.user === user) ? 'message-sent' : 'message-received';
+            messageList.innerHTML += `<li class="${messageClass}"><strong>${log.user}:</strong> ${log.message}</li>`; 
+            messageListContainer.scrollTop = messageListContainer.scrollHeight;
         });
         }
     }
@@ -43,18 +46,10 @@ socket.on('historial_mensajes', data =>{
 
 socket.on('message_logs', data => {
     if (messageList) {
-        messageList.innerHTML += `<li>${data.user}: ${data.message}</li><br>`;
-        messageList.scrollTop = messageList.scrollHeight;
+        const messageClass = (data.user === user) ? 'message-sent' : 'message-received';
+        messageList.innerHTML += `<li class="${messageClass}"><strong>${data.user}:</strong> ${data.message}</li>`; 
+        messageListContainer.scrollTop = messageListContainer.scrollHeight;
     } else {
         console.error("Elemento con ID 'list-message' no encontrado.");
     }
-    //     if(messageList) {
-    //     let messages = '';
-    //     data.forEach(message => {
-    //         messages += `<li>${message.user}: ${message.message}</li><br>`
-    //     });
-    //     messageList.innerHTML = messages
-    // } else{
-    //     console.log('no esta funcionando')
-    // }
 })

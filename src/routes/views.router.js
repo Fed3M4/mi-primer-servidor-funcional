@@ -23,7 +23,7 @@ viewsRouter.get("/home", async (req, res) => {
 viewsRouter.get('/chat', async(req, res)=> {
   try {
     res.render('chat', {
-      style: 'general.css',
+      style: 'chat.css',
       title: 'Chat'
     })
   } catch (error) {

@@ -1,13 +1,15 @@
 <div>
-    <h2>Chat</h2>
-    <div>
-        <input type="text" name="chatBox" id="message">
-    </div>
-    <div>
-        {{!-- <p id="list-message"></p> --}}
-        <ul id="list-message"></ul>
-    </div>
+  <h2>Chat</h2>
+  <div class="messageListContainer">
+    {{! AÑADE UNA CLASE A ESTE DIV }}
+    <ul id="list-message"></ul>
+  </div>
+  <div class="inputBox">
+    <textarea name="chatBox" id="message" rows="1"></textarea>
+  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"
+></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="../public/js/chat.js"></script>
