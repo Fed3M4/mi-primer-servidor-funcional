@@ -1,5 +1,5 @@
 /* Estilo básico para el contenedor principal del chat */
-div {
+#chat-container {
     font-family: sans-serif;
     width: 100%; /* Hacer que ocupe todo el ancho disponible */
     padding: 0 20px; /* Añadir un poco de padding a los lados para que no toque los bordes */
@@ -10,20 +10,19 @@ div {
     display: flex;
     flex-direction: column;
     height: 80vh; /* Mantener la altura para que la lista de mensajes pueda scrollear */
-}
-
-/* Mantener el margen vertical si lo deseas */
-div {
     margin: 20px 0; /* Margen solo arriba y abajo, sin centrado automático */
 }
 
 .inputBox{
+    padding: 10px; /* Mantenemos padding aquí para esta sección */
+    border-top: 1px solid #ccc;
     height: 10vh;
     margin: 3px;
+    min-height: 5vh;
 }
 
 /* Estilo para el título del chat */
-h2 {
+#chat-container h2 {
     text-align: center;
     background-color: #f0f0f0; /* Fondo para el encabezado */
     margin: 0; /* Eliminar margen por defecto */
@@ -71,7 +70,7 @@ div:nth-of-type(2) { /* Selecciona el segundo div dentro del principal */
     border-radius: 4px;
     margin-right: 10px; /* Espacio a la derecha si añades un botón */
     resize: vertical; /* Permite al usuario redimensionar verticalmente */
-    min-height: 40px; /* Altura mínima inicial (ajusta según prefieras) */
+    min-height: 3vh; /* Altura mínima inicial (ajusta según prefieras) */
     overflow-y: auto; /* Añade scroll si el contenido supera la altura */
 }
 
